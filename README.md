@@ -222,6 +222,4 @@ Gaurav Pipavat
   *  Role: C++ Developer / Student
   *  Project: Railway Reservation System
 
-## 📄 License
 
-This project is created for **learning and educational purposes**.
