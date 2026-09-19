@@ -24,6 +24,9 @@ This project allows users to add train records, display all train records, and s
 * **Other:**   visual Studio Code, git,github 
 * **Header Files:**
 
+## output
+![Program Output](output.png)
+
 
 ## 📂 Folder Structure
 │
@@ -31,8 +34,7 @@ This project allows users to add train records, display all train records, and s
 ├── output.png
 └── README.md
 ```
-## output
-![Program Output](output.png)
+
 
 ## 🧑‍💻 C++ Concepts Used
 
