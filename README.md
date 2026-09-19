@@ -31,7 +31,7 @@ This project allows users to add train records, display all train records, and s
 ├── output.png
 └── README.md
 ```
-##output
+## output
 ![Program Output](output.png)
 
 ## 🧑‍💻 C++ Concepts Used
