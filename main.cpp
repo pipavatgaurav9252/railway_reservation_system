@@ -120,6 +120,19 @@ private:
     int total_trains = 0;
 
 public:
+    RailwaySystem()
+    {
+        cout << "===Enter details for 1 trains:===" << endl;
+        trains[0].inputTraindetails();
+        cout << endl;
+        cout << "===Enter details for 2 trains:===" << endl;
+        trains[1].inputTraindetails();
+        cout << endl;
+        cout << "===Enter details for 3 trains:===" << endl;
+        trains[2].inputTraindetails();
+        cout << endl;
+        total_trains = 3;
+    }
     void addTrain()
     {
         trains[total_trains].inputTraindetails();
@@ -140,6 +153,11 @@ public:
 
     void searchTrainByNumber(int number)
     {
+        if (total_trains == 0)
+        {
+            cout << "No train records found." << endl;
+            return;
+        }
 
         for (int i = 0; i < total_trains; i++)
         {
@@ -149,6 +167,7 @@ public:
                 return;
             }
         }
+        cout << "train number not matched" << endl;
     }
 };
 
@@ -185,13 +204,13 @@ int main()
         case 3:
             cout << "=== Search train by number ===" << endl;
             int number;
-            cout << "Enter a train number";
+            cout << "Enter a train number: ";
             cin >> number;
             railway.searchTrainByNumber(number);
             break;
 
         case 4:
-            cout << "Exiting..." << endl;
+            cout << "Exiting...Goodbye!" << endl;
 
         default:
             cout << "Invalid input." << endl;
