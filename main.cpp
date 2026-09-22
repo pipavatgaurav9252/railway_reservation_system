@@ -211,6 +211,7 @@ int main()
 
         case 4:
             cout << "Exiting...Goodbye!" << endl;
+            break;
 
         default:
             cout << "Invalid input." << endl;
