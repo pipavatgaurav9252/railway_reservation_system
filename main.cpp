@@ -7,7 +7,7 @@ class Train
 {
 private:
     int train_number;
-    string train_name, train_source, train_distination, train_time;
+    string train_name, train_source, train_destination, train_time;
 
     static int train_count;
 
@@ -17,17 +17,17 @@ public:
         train_number = 0;
         train_name = "";
         train_source = "";
-        train_distination = "";
+        train_destination = "";
         train_time = "";
 
         train_count++;
     }
-    Train(int number, string name, string source, string distination, string time)
+    Train(int number, string name, string source, string destination, string time)
     {
         train_number = number;
         train_name = name;
         train_source = source;
-        train_distination = distination;
+        train_destination = destination;
         train_time = time;
 
         train_count++;
@@ -48,9 +48,9 @@ public:
     {
         train_source = source;
     }
-    void set_train_distination(string distination)
+    void set_train_destination(string destination)
     {
-        train_distination = distination;
+        train_destination = destination;
     }
     void set_train_time(string time)
     {
@@ -69,9 +69,9 @@ public:
     {
         return train_source;
     }
-    string get_train_distination()
+    string get_train_destination()
     {
-        return train_distination;
+        return train_destination;
     }
     string get_train_time()
     {
@@ -90,8 +90,8 @@ public:
         cout << "Enter train source: ";
         getline(cin, train_source);
 
-        cout << "Enter train distination: ";
-        getline(cin, train_distination);
+        cout << "Enter train destination: ";
+        getline(cin, train_destination);
 
         cout << "Enter train time: ";
         getline(cin, train_time);
@@ -101,7 +101,7 @@ public:
         cout << " the train number is: " << train_number << endl;
         cout << " the train name is: " << train_name << endl;
         cout << " the train source is: " << train_source << endl;
-        cout << " the train distination is: " << train_distination << endl;
+        cout << " the train destination is: " << train_destination << endl;
         cout << " the train time is : " << train_time << endl;
     }
 

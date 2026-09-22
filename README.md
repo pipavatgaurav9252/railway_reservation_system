@@ -197,7 +197,7 @@ Exiting...Goodbye!
 Save the C++ program as:
 
 ```text
-railway.cpp
+main.cpp
 ```
 
 ### Step 2: Compile
